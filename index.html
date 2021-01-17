@@ -29,12 +29,21 @@
         <div class="slider-box clearfix">
             <div class="slider-half-item">
                 <article>
-                    Najlepsza pizza w mieście
+                    <form id = "problemCarForm" form action=”mailto:kacper.roda37@gmail.com" method=”POST” enctype=”multipart/form-data”>
+                    <label id = "problemCarLabel" for = "problemCar">Masz pytanie? Napisz wiadomość e-mail</label>
+                    
+                    <textarea id="problemCarDescription" name="problemCarDescription" rows="3" cols="50">
+                    </textarea>
+                    
                     <hr>
                     <section class="button-section">
-                        <a href="#" class="button order-button">Zamów z dostawą</a>
-                        <a href="#" class="button book-button">Rezerwacja</a>
+                        <input type="submit" value="Wyślij zapytanie" class="button order-button">
+                        <input type="reset" class="button book-button" value="Reset">
+                        <span id = "callInformationPart1">lub...</span>
+                        <span id = "callInformationPart2"><a class = "button call-button" href="tel:123-456-7890">Zadzwoń!</a></span>
                     </section>
+                    
+                </form>
                 </article>
             </div>
             <div class="slider-half-item pizza-img"> 
@@ -110,12 +119,7 @@
             -->   
     </main>
     <footer class="page-footer menu">
-        <ul>
-            <li><a href="#">Regulamin</a></li>
-            <li><a href="#">O nas</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
+        All rights reserved &reg;
     </footer>
  
 </body>
