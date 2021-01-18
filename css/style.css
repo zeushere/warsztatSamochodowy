@@ -53,8 +53,7 @@ body {
      color: #FFD77F;
  }
 
- #contact
- {
+ #contact {
      margin-top: 1rem;
      text-align: center;
      float: right;
@@ -99,7 +98,6 @@ body {
      font-size: 0.8rem;
  }
 
- 
  #callInformationPart1 {
     margin-left: 1rem;
  }
@@ -121,6 +119,7 @@ body {
      border: 2px solid #7FD7FF;
      background-color:fuchsia;
  }
+
  .reset-button {
      color: black;
      font-weight: bold;
@@ -273,39 +272,37 @@ body {
     margin-right: auto;
 }
 
-#whatRepairing{
+#whatRepairing {
     background-color: black;
     position: relative;
 }
 
-#electronics
-{
+#electronics {
     background-color: black;
     position: relative;
 }
 
-#airConditioning{
+#airConditioning {
     background-color: black;
 }
 
-#airConditioningInfo{
-    background-color: black;
-    position: relative;
-    font-size: 1.5rem;
-}
-
-#vulcanization
-{
-    background-color: black;
-}
-
-#vulcanizationInfo{
+#airConditioningInfo {
     background-color: black;
     position: relative;
     font-size: 1.5rem;
 }
 
-#aboutUs{
+#vulcanization {
+    background-color: black;
+}
+
+#vulcanizationInfo {
+    background-color: black;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+#aboutUs {
     box-sizing: border-box;
     position: relative;
     background-color: black;
@@ -316,15 +313,15 @@ body {
     width: 100%;
 }
 
-
-#address{
+#address {
     background-color: black;
     width: 50%;
     float: left;
     display: block;
     text-align: center;
 }
-#map{
+
+#map {
     background-color: black;
     width: 50%;
     float: left;  
@@ -332,12 +329,11 @@ body {
     text-align: center;
 }
 
-
 #googleMap {
     text-align: center;
 }
 
-h1{
+h1 {
     color:lime;
     text-align: center;
     font-size: 2.5rem;
@@ -353,11 +349,13 @@ h1{
     width: 33.3%;
     background-color: black;
 }
+
 #carBody {
     float: left;
     width: 33.3%;
     background-color: black;
 }
+
 #introduction {
     font-weight: bold;
     font-size: 2rem;
