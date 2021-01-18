@@ -216,8 +216,10 @@ body {
 
 .slider .nextSlide {
     cursor: pointer;
-    position: absolute;
-    top: 45%;
+    margin: 0;
+    position: absolute;               
+    top: 51%;                         
+    transform: translate(0, -50%);
     color: white;
     font-weight: bold;
     font-size: 25px;
@@ -227,8 +229,10 @@ body {
 .slider .previousSlide {
     cursor: pointer;
     text-align: right;
-    position:absolute;
-    top: 45%;
+    margin: 0;
+    position: absolute;               
+    top: 50%;                         
+    transform: translate(0, -50%);
     left: 40%;
     color: white;
     font-weight: bold;
@@ -308,28 +312,29 @@ body {
     position: relative;
     font-size: 1.5rem;
     background-size: contain;
-    
-}
-
-#workTime{
-    background-color: black;
-    width: 33.3%;
-    float: left;
     display: block;
-
+    width: 100%;
 }
+
 
 #address{
     background-color: black;
-    width: 33.3%;
+    width: 50%;
     float: left;
     display: block;
+    text-align: center;
 }
 #map{
     background-color: black;
-    width: 33.3%;
+    width: 50%;
     float: left;  
     display: block;
+    text-align: center;
+}
+
+
+#googleMap {
+    text-align: center;
 }
 
 h1{
