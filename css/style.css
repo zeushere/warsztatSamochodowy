@@ -6,13 +6,7 @@
     box-sizing: inherit;
 }
 body {
-    background-image: url(/img/background.jpg);
-
-    
-}
-#problemCarDescription::before
-{
-    content: "none";
+    background-image: url(/img/background.jpg);    
 }
  #header {
     background:black;
@@ -28,16 +22,13 @@ body {
  #logo img {
      width: 20rem;
      height: 10rem;
-     margin-left: 0.5rem;
+     margin-left: 0.1rem;
  }
 
-#problemCarDescription
-{
+#problemCarDescription {
     resize: none;
     text-align: left;
-    
 }
-
 
  .menu {
      float: left;
@@ -45,7 +36,6 @@ body {
      width: 60%;
      text-align: justify;
      margin-top: 3rem;
-     
  }
 
  .menu ul li {
@@ -71,9 +61,9 @@ body {
  }
 
  #tel
- {     
-     font-weight: bold;
-     font-size: 1.5rem;
+ {      
+    font-weight: bold;
+    font-size: 1.5rem;
  }
 
  .clearfix::after {
@@ -82,30 +72,29 @@ body {
      clear: both;
  }
 
- .slider-box{
+ .contact-box {
      width: 100%;
      height: 200px;
      background-color: black;
  }
 
- .slider-half-item {
+ .contact-half-item {
      width: 50%;
      float: left;
      height: 100%;
      font-family: cursive, Geneva;
      padding: 10px;
-
  }
 
- .slider-half-item article {
+ .contact-half-item article {
      margin: 2rem;
  }
 
- .slider-half-item article .button-section {
+ .contact-half-item article .button-section {
      margin-top: 1rem;
  }
 
- .slider-half-item .button  {
+ .contact-half-item .button {
      text-transform: uppercase;
      padding: 10px;
      text-decoration: none;
@@ -114,60 +103,58 @@ body {
  }
 
  
- #callInformationPart1
- {
+ #callInformationPart1 {
     margin-left: 1rem;
  }
 
- #callInformationPart2
- {
+ #callInformationPart2 {
      margin-left: 1.5rem;
  }
 
- .call-button
- {
+ .call-button {
         color:black;
         border: 2px solid indianred;
         background-color:dodgerblue;
         font-weight: bold;
  }
 
- .order-button {
+ .ask-button {
      color: black;
      font-weight: bold;
      border: 2px solid #7FD7FF;
      background-color:fuchsia;
  }
- .book-button {
+ .reset-button {
      color: black;
      font-weight: bold;
      border: 2px solid #FFD77F;
      background-color: #936c02;
  }
 
- .order-button:hover, .book-button:hover, .call-button:hover {
+ .ask-button:hover, .reset-button:hover, .call-button:hover {
     background-color: #333333; 
+    color: whitesmoke;
  }
 
- .pizza-img {
+ .car-img {
     background-image: url("/img/engine.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 } 
 
-.advantages-box {
+.promotion-box {
     background-color: transparent;
 }
 
-.advantages-one-third {
+.promotion-one-third {
     width: 33.3%;
     float: left;
     padding: 20px;
     margin: 30px 0px 30px;
 }
 
-.column-advantage {
+.column-promotion {
     position: relative;
     height: 160px;
     border: 5px solid black;
@@ -179,33 +166,21 @@ body {
     font-family: cursive, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.best-ingredients {
+.tires {
     background-image: url("/img/tires.jpg");
-}
-
-#tires
-{
-    color:aqua;
     font-size: 1.4rem;
+    color: aqua;
 }
 
-#filtersOil
-{
+.filtersOil {
     color:chartreuse;
     font-size: 1.4rem;
-}
-
-#timingGear
-{
-    color:yellow;
-    font-size: 1.4rem;
-}
-
-.original-recipe {
     background-image: url("/img/filtersOil.jpg");
 }
 
-.fast-delivery {
+.timingGear {
+    color:yellow;
+    font-size: 1.4rem;
     background-image: url("/img/timingGear.jpg");
 }
 
@@ -215,12 +190,7 @@ body {
     bottom: 10px;
 }
 
-
- .kitchen-menu {
-     background-color: black;
- }
-
- .menu-one-forth {
+ .saleInformation {
      width: 40%;
      float: left;
      font-family: cursive, Verdana, Geneva, Tahoma, sans-serif;
@@ -230,45 +200,32 @@ body {
      text-align: center;
     vertical-align: middle;
     line-height: 150px;
-    color:orangered;
-    
+    color:orangered;  
  }
-
- .menu-one-forth img {
-     width: 100%;
- }
-
- .page-footer {
-     width: 100%;
-     background-color: black;
-     font-family: Cookie, cursive;
-     text-align: center;
-     font-size: 2rem;
-     clear: both;
-     margin-top: 2.2rem;
-     margin-left: auto;
-     margin-right: auto;
-
- }
-
-.slider{
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-    height: 300px;
+ 
+ .sliderPane {
+    background-color: black;
 }
 
-.slider .item img {
+
+.slider {
+    max-width: 100%;
+    position: relative;
+    height: 300px;
+    
+}
+
+.slider .cars img {
     object-fit: cover;
     width: 60%;
     height: 300px;
-
+    border: 2px solid sandybrown
 }
-/* Кнопки вперед и назад */
-.slider .next {
+
+.slider .nextSlide {
     cursor: pointer;
     position: absolute;
-    top: 45%;   
+    top: 45%;
     margin-top: auto;
     color: white;
     font-weight: bold;
@@ -276,15 +233,13 @@ body {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
 }
-.slider .previous
-{
+.slider .previousSlide {
     cursor: pointer;
     text-align: right;
     position:absolute;
     top: 45%;
-    width: 40%;
-    margin-top: auto
-    padding: 16px;
+    left: 40%;
+    margin-top: auto;
     color: white;
     font-weight: bold;
     font-size: 25px;
@@ -292,17 +247,14 @@ body {
     border-radius: 0 3px 3px 0;
         
 }
-.slider .next {
+.slider .nextSlide {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-/* При наведении на кнопки добавляем фон кнопок */
-.slider .previous:hover,
-.slider .next:hover {
+.slider .previousSlide:hover, .slider .nextSlide:hover {
     color:lime;
 }
-/* Анимация слайдов */
-.slider .item {
+.slider .cars {
     animation-name: fade;
     animation-duration: 1.5s;
 }
@@ -313,4 +265,16 @@ body {
     to {
         opacity: 1
     }
+}
+
+.page-footer {
+    width: 100%;
+    background-color: black;
+    font-family: Cookie, cursive;
+    text-align: center;
+    font-size: 2rem;
+    clear: both;
+    margin-top: 2.2rem;
+    margin-left: auto;
+    margin-right: auto;
 }

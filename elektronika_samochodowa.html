@@ -1,115 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <link rel="icon" href="img/icon.png" type="image/png" sizes="16x16">
     <script src="js/script.js"></script>
-    <title>Warsztat Samochodowy</title>
+    <title>Elektronika Samochodowa</title>
+
 </head>
 <body onload="onLoad()">
+
     <header id="header" class="clearfix">
+    
         <div id="logo">
             <img src="img/auto.jpg" alt="">
         </div>
+    
         <nav class="menu">
+    
             <ul>
                 <li><a href="index.html">Strona główna</a></li>
                 <li><a href="mechanika_samochodowa.html">Mechanika Samochodowa</a></li>
                 <li><a href="#">Elektronika Samochodowa</a></li>
-                <li><a href="#">Klimatyzacja</a></li>
-                <li><a href="#">Wulkanizacja</a></li>
-                <li><a href="#">O nas</a></li>
+                <li><a href="klimatyzacja.html">Klimatyzacja</a></li>
+                <li><a href="wulkanizacja.html">Wulkanizacja</a></li>
+                <li><a href="onas.html">O nas</a></li>
+    
             </ul>
         </nav>
-        <div id = "contact"> <p id = "tel">666-666-666
-            <br>
+    
+        <div id = "contact"> <p id = "tel">666-666-666<br>
             Pon-Pt<br>
             08:00 - 16:00</p> </div>
        
     </header>
+
     <main>
-        <div class="slider-box clearfix">
-            <div class="slider-half-item">
+
+        <div class="contact-box clearfix">
+
+            <div class="contact-half-item">
+
                 <article>
+                  
                     <form id = "problemCarForm" form action=”mailto:kacper.roda37@gmail.com" method=”POST” enctype=”multipart/form-data”>
                     <label id = "problemCarLabel" for = "problemCar">Masz pytanie? Napisz wiadomość e-mail</label>
                     <br>
                     <textarea id="problemCarDescription" name="problemCarDescription" rows="3" cols="50">
-                    </textarea>
-                    
+                    </textarea>                    
                     <hr>
+
                     <section class="button-section">
-                        <input type="submit" value="Wyślij zapytanie" class="button order-button">
-                        <input type="reset" class="button book-button" value="Reset">
+                    
+                        <input type="submit" value="Wyślij zapytanie" class="button ask-button">
+                        <input type="reset" class="button reset-button" value="Reset">
                         <span id = "callInformationPart1">lub...</span>
                         <span id = "callInformationPart2"><a class = "button call-button" href="tel:666-666-666">Zadzwoń!</a></span>
+                    
                     </section>
                     
                 </form>
+               
                 </article>
             </div>
-            <div class="slider-half-item pizza-img"> 
+            
+            <div class="contact-half-item car-img"> 
                 &nbsp;
             </div>
+        
         </div>
 
-
-        <div class="advantages-box clearfix">
-            <div class="advantages-one-third">
-                <div class="column-advantage best-ingredients">
-                    <div class="bottom-right" id="tires">Wymiana opon już od 30zł!</div>
+        <div class="promotion-box clearfix">
+            
+            <div class="promotion-one-third">
+            
+                <div class="column-promotion tires">
+            
+                    <div class="bottom-right">Wymiana opon już od 30zł!</div>
                 </div>
+          
             </div>
-            <div class="advantages-one-third">
-                <div class="column-advantage original-recipe">
-                    <div class="bottom-right" id="filtersOil">Kompletna wymiana filtrów i oleju - 40zł!</div>
+          
+            <div class="promotion-one-third">
+          
+                <div class="column-promotion filtersOil">
+          
+                    <div class="bottom-right">Kompletna wymiana filtrów i oleju - 40zł!</div>
+         
                 </div>
+        
             </div>
-            <div class="advantages-one-third">
-                <div class="column-advantage fast-delivery">
-                    <div class="bottom-right" id="timingGear">Wymień u nas rozrząd, a otrzymasz prezent!</div>
+        
+            <div class="promotion-one-third">
+        
+                <div class="column-promotion timingGear">
+        
+                    <div class="bottom-right">Wymień u nas rozrząd, a otrzymasz prezent!</div>
+        
                 </div>
+        
             </div>
+        
         </div>
         
 
+        <div class="sliderPane clearfix">
 
-        <div class="kitchen-menu clearfix">
-            <div class="menu-one-forth">
+            <div class="saleInformation">
+
                 <article>
+
                     <p>Samochody na sprzedaż!</p>
                 </article>
+
             </div>
+
             <div class="slider">
   
-                <!-- Первый слайд -->
-                <div class="item" id = "first_img">
+                <div class="cars" id = "first_img">
+
                     <img src="img/passat.jpg">
+
                 </div>
               
-                <!-- Второй слайд -->
-                <div class="item" id = "second_img">
+                <div class="cars" id = "second_img">
+
                     <img src="img/e46.jpg">
+
                 </div>
               
-                <!-- Третий слайд -->
-                <div class="item" id = "third_img">
+            
+                <div class="cars" id = "third_img">
+
                     <img src="img/astra.jpg">
+
                 </div>
               
-                <!-- Кнопки-стрелочки -->
-                <a class="previous" onclick="previousSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
+            
+                <a class="previousSlide" onclick="previousSlide()">&#10094;</a>
+
+                <a class="nextSlide" onclick="nextSlide()">&#10095;</a>
+
             </div>
-            </div>           
+
+        </div>           
     </main>
+
     <footer class="page-footer menu">
         All rights reserved &reg;
     </footer>
  
 </body>
 </html>
-
