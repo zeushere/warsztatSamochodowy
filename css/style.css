@@ -8,10 +8,12 @@
 body {
     background-image: url(/img/background.jpg);    
 }
- #header {
+ header {
     background:black;
      padding: 5px;
      font-family: 'Cookie', cursive;
+     clear: both;
+     width: 100%;
  }
 
  #logo {
@@ -32,9 +34,8 @@ body {
 
  .menu {
      float: left;
-     margin-left: 1rem;
-     width: 60%;
-     text-align: justify;
+     width: 65%;
+     text-align: center;
      margin-top: 3rem;
  }
 
@@ -54,15 +55,11 @@ body {
 
  #contact
  {
-     width: 18%;
      margin-top: 1rem;
      text-align: center;
-     float: left;
- }
-
- #tel
- {      
-    font-weight: bold;
+     float: right;
+     margin-right: 2rem;
+     font-weight: bold;
     font-size: 1.5rem;
  }
 
@@ -131,6 +128,7 @@ body {
      background-color: #936c02;
  }
 
+
  .ask-button:hover, .reset-button:hover, .call-button:hover {
     background-color: #333333; 
     color: whitesmoke;
@@ -153,6 +151,7 @@ body {
     padding: 20px;
     margin: 30px 0px 30px;
 }
+
 
 .column-promotion {
     position: relative;
@@ -196,29 +195,32 @@ body {
      font-family: cursive, Verdana, Geneva, Tahoma, sans-serif;
      padding: 20px;
      text-align: center;
+     margin-top: 50%;
+     margin-bottom: 50%;
      font-size: 3rem;
      text-align: center;
     vertical-align: middle;
-    line-height: 150px;
     color:orangered;  
+    
  }
  
  .sliderPane {
     background-color: black;
+
+    
 }
 
 
 .slider {
     max-width: 100%;
     position: relative;
-    height: 300px;
     
 }
 
 .slider .cars img {
     object-fit: cover;
     width: 60%;
-    height: 300px;
+    
     border: 2px solid sandybrown
 }
 
@@ -277,4 +279,114 @@ body {
     margin-top: 2.2rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+#whatRepairing{
+    background-color: black;
+    position: relative;
+}
+
+#electronics
+{
+    background-color: black;
+    position: relative;
+}
+
+#airConditioning{
+    background-color: black;
+}
+
+#airConditioningInfo{
+    background-color: black;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+#vulcanization
+{
+    background-color: black;
+}
+
+#vulcanizationInfo{
+    background-color: black;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+#aboutUs{
+    box-sizing: border-box;
+    position: relative;
+    background-color: black;
+    position: relative;
+    font-size: 1.5rem;
+    background-size: contain;
+    
+}
+
+#workTime{
+    background-color: black;
+    width: 33.3%;
+    float: left;
+    display: block;
+
+}
+
+#address{
+    background-color: black;
+    width: 33.3%;
+    float: left;
+    display: block;
+}
+#map{
+    background-color: black;
+    width: 33.3%;
+    float: left;  
+    display: block;
+}
+
+h1{
+    color:lime;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#carEngine {
+    float: left;
+    width: 33.3%;
+    background-color: black;
+}
+#carSuspension {
+    float: left;
+    width: 33.3%;
+    background-color: black;
+}
+#carBody {
+    float: left;
+    width: 33.3%;
+    background-color: black;
+}
+#introduction {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#carDiagnostic {
+    float: left;
+    width: 33.3%;
+    background-color: black;
+
+}
+
+#carChiptuning {
+    float: left;
+    width: 33.3%;
+    background-color: black;
+    
+}
+
+#functionElectronics {
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    background-color: black;
 }
