@@ -15,7 +15,7 @@ function previousSlide() {
 }
 
 function showSlides(n) {
-    let i;
+
     let slides = document.getElementsByClassName("cars");
     
     if (n > slides.length) {

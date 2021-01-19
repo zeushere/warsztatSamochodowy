@@ -8,28 +8,38 @@
 body {
     background-image: url("https://cdn.pixabay.com/photo/2015/09/05/23/36/jumper-cables-926308_960_720.jpg");    
 }
- header {
-    background-color:black;
+ #header {
+     background-color:black;
      padding: 5px;
      font-family: 'Cookie', cursive;
-     clear: both;
      width: 100%;
+     position: static;
+     height: auto;
+     display: block;
  }
 
  #logo {
      float: left;
      width: 20%;
+     position: static;
+     height: auto;
+     display: block;
  }
 
  #logo img {
      width: 20rem;
      height: 10rem;
      margin-left: 0.1rem;
+     position: block;
  }
 
 #problemCarDescription {
     resize: none;
     text-align: left;
+    height: auto;
+    width: auto;
+    position: static;
+    display: block;
 }
 
  .menu {
@@ -37,10 +47,13 @@ body {
      width: 65%;
      text-align: center;
      margin-top: 3rem;
+     height: auto;
+     position: static;
+     display: inline;
  }
 
  .menu ul li {
-     display: inline-block;
+     display: inline;
      padding-right: 20px;
  }
 
@@ -54,12 +67,16 @@ body {
  }
 
  #contact {
-     margin-top: 1rem;
-     text-align: center;
-     float: right;
-     margin-right: 2rem;
-     font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+    float: right;
+    margin-right: 2rem;
+    font-weight: bold;
     font-size: 1.5rem;
+    position: static;
+    display: block;
+    height: auto;
+    width: auto;
  }
 
  .clearfix::after {
@@ -72,6 +89,7 @@ body {
      width: 100%;
      height: 200px;
      background-color: black;
+     display: block;
  }
 
  .contact-half-item {
@@ -80,6 +98,7 @@ body {
      height: 100%;
      font-family: cursive, Geneva;
      padding: 10px;
+     display: block;
  }
 
  .contact-half-item article {
@@ -96,6 +115,9 @@ body {
      text-decoration: none;
      margin: 2px;
      font-size: 0.8rem;
+     height: auto;
+     width: auto;
+     display: inline;
  }
 
  #callInformationPart1 {
@@ -138,10 +160,14 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    display: block;
 } 
 
 .promotion-box {
     background-color: transparent;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .promotion-one-third {
@@ -149,25 +175,29 @@ body {
     float: left;
     padding: 20px;
     margin: 30px 0px 30px;
+    text-align: center;
+    height: 100%;
 }
 
 
 .column-promotion {
     position: relative;
     height: 160px;
+    width: 100%;
     border: 5px solid black;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     font-family: cursive, Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
 }
 
 .tires {
     background-image: url("https://cdn.pixabay.com/photo/2013/05/28/18/11/tire-114259_960_720.jpg");
     font-size: 1.4rem;
     color: aqua;
-    
 }
+
 
 .filtersOil {
     color:chartreuse;
@@ -185,6 +215,8 @@ body {
     position: absolute;
     right: 10px;
     bottom: 10px;
+    width: 100%;
+    height: auto;
 }
 
  #saleDiv {
@@ -194,21 +226,30 @@ body {
     font-size: 3rem;
     color:orangered;
     text-align: center;
+    position: relative;
+    height: auto;
+    display: inline;
  }
 
- 
+
  .sliderPane {
     background-color: black;
-    display: block;    
+    display: block; 
+    position: relative;
+    height: auto;
+    width: auto; 
 }
 
 .slider {
     position: relative;
+    height: auto;
+    width: auto;
 }
 
 .slider .cars img {
     object-fit: cover;
     width: 60%;
+    height: auto;
     border: 2px solid sandybrown;
 }
 
@@ -223,6 +264,8 @@ body {
     font-size: 25px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 .slider .previousSlide {
     cursor: pointer;
@@ -239,24 +282,9 @@ body {
     border-radius: 0 3px 3px 0;
         
 }
-.slider .nextSlide {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
+
 .slider .previousSlide:hover, .slider .nextSlide:hover {
     color:lime;
-}
-.slider .cars {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@keyframes fade {
-    from {
-        opacity: 0.4
-    }
-    to {
-        opacity: 1
-    }
 }
 
 .page-footer {
@@ -269,47 +297,63 @@ body {
     margin-top: 2.2rem;
     margin-left: auto;
     margin-right: auto;
+    height: auto;
+    position: static;
 }
 
 #whatRepairing {
     background-color: black;
     position: relative;
+    height: auto;
+    width: auto;
 }
 
 #electronics {
     background-color: black;
     position: relative;
+    height: auto;
+    width: auto;
 }
 
 #airConditioning {
     background-color: black;
+    height: auto;
+    width: auto;
+    position: relative;
 }
 
 #airConditioningInfo {
     background-color: black;
     position: relative;
+    height: auto;
+    width: auto;
     font-size: 1.5rem;
 }
 
 #vulcanization {
     background-color: black;
+    height: auto;
+    width: auto;
+    position: relative;
 }
 
 #vulcanizationInfo {
     background-color: black;
     position: relative;
     font-size: 1.5rem;
+    height: auto;
+    width: auto;
 }
 
 #aboutUs {
     box-sizing: border-box;
     position: relative;
     background-color: black;
-    position: relative;
     font-size: 1.5rem;
     background-size: contain;
     display: block;
     width: 100%;
+    height: auto;
 }
 
 #address {
@@ -318,6 +362,8 @@ body {
     float: left;
     display: block;
     text-align: center;
+    height: auto;
+    position: static;
 }
 
 #map {
@@ -326,44 +372,66 @@ body {
     float: left;  
     display: block;
     text-align: center;
+    height: auto;
+    position: static;
 }
 
 #googleMap {
     text-align: center;
+    height: auto;
+    width: auto;
+    display: block;
 }
 
 h1 {
     color:lime;
     text-align: center;
     font-size: 2.5rem;
+    position: static;
 }
 
 #carEngine {
     float: left;
     width: 33.3%;
     background-color: black;
+    height: auto;
+    position: static;
+    display: block;
 }
+
 #carSuspension {
     float: left;
     width: 33.3%;
     background-color: black;
+    position: static;
+    height: auto;
+    display: block;
 }
 
 #carBody {
     float: left;
     width: 33.3%;
     background-color: black;
+    height: auto;
+    position: static;
+    display: block;
 }
 
 #introduction {
     font-weight: bold;
     font-size: 2rem;
+    height: auto;
+    position: static;
+    display: block;
 }
 
 #carDiagnostic {
     float: left;
     width: 33.3%;
     background-color: black;
+    position: static;
+    height: auto;
+    display: block;
 
 }
 
@@ -371,12 +439,17 @@ h1 {
     float: left;
     width: 33.3%;
     background-color: black;
+    position: static;
+    height: auto;
+    display: block;
     
 }
 
 #functionElectronics {
     float: left;
     width: 33.3%;
-    height: 100%;
+    height: auto;
     background-color: black;
+    display: block;
+    position: static;
 }
